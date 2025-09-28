@@ -20,7 +20,10 @@ int main(int argc, char** argv) {
 
     /******************ADD YOUR VARIABLES HERE*************************/
 
-
+    int current_time = 0;
+    const int context_SR_time = 10;
+    const int ISR_body_time = 40;
+    std::vector<int> deviceTimers = delays;
 
     /******************************************************************/
 
@@ -30,7 +33,10 @@ int main(int argc, char** argv) {
 
         /******************ADD YOUR SIMULATION CODE HERE*************************/
 
-
+        if (activity == "CPU") {
+            execution += std::to_string(current_time) + ", " + std::to_string(duration_intr) + ", CPU\n";
+            current_time += duration_intr;
+        }
 
         /************************************************************************/
 
