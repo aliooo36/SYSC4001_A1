@@ -1,3 +1,17 @@
 0, 50, CPU
-50, 100, CPU
-150, 75, CPU
+50, 1, SYSCALL 7
+51, 1, switch to kernel mode
+52, 10, context saved
+62, 1, find vector 7 in memory position 0x000E
+63, 1, load address 0X00BD into the PC
+64, 152, call device driver
+216, 1, IRET
+217, 100, CPU
+317, 1, SYSCALL 12
+318, 1, switch to kernel mode
+319, 10, context saved
+329, 1, find vector 12 in memory position 0x0018
+330, 1, load address 0X03B9 into the PC
+331, 145, call device driver
+476, 1, IRET
+477, 20, CPU
