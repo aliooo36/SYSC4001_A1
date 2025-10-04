@@ -33,7 +33,7 @@ int main(int argc, char** argv) {
         /******************ADD YOUR SIMULATION CODE HERE*************************/
 
         if (activity == "CPU") {
-            execution += std::to_string(currentTime) + ", " + std::to_string(duration_intr) + ", CPU\n";
+            execution += std::to_string(currentTime) + ", " + std::to_string(duration_intr) + ", CPU burst\n";
             currentTime += duration_intr;
         }
 
@@ -59,7 +59,33 @@ int main(int argc, char** argv) {
 
         }
         else if (activity == "END_IO") {
-            continue;
+            int device_num = duration_intr;
+
+            if (device_num >= delays.size()) { 
+                execution += std::to_string(currentTime) + ", 1, Error: Invalid device number.\n";
+                currentTime += 1;
+                continue;
+            }
+            
+            if (device_num >= vectors.size()) { 
+                execution += std::to_string(currentTime) + ", 1, Error: Invalid ISR. Does not exist in vector table.\n";
+                currentTime += 1;
+                continue;
+            }
+
+            auto [intrpExec, updateTime] = intr_boilerplate(currentTime, device_num, contextSRTime, vectors); // helper function execution and then storing in variables
+            execution += intrpExec;
+            currentTime = updateTime;
+
+            int device_time = delays[device_num];
+            execution += std::to_string(currentTime) + ", " + std::to_string(device_time) + ", call device driver\n";
+            currentTime += device_time;
+
+            execution += std::to_string(currentTime) + ", 1, IRET\n";
+            currentTime += 1;
+        }
+        else {
+            execution += std::to_string(currentTime) + ", ERROR: Unkown Activity.\n";
         }
 
         /************************************************************************/
