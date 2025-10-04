@@ -41,20 +41,21 @@ int main(int argc, char** argv) {
             int device_num = duration_intr;
 
             // checking to see if ISR is in vector table
-            if (duration_intr >= vectors.size()) { 
-                execution += std::to_string(currentTime) + ", Error: Invalid ISR. Does not exist in vector table.";
+            if (device_num >= vectors.size()) { 
+                execution += std::to_string(currentTime) + ", 1, Error: Invalid ISR. Does not exist in vector table.\n";
                 currentTime += 1;
                 continue;
             }
         
             auto [intrpExec, updateTime] = intr_boilerplate(currentTime, device_num, contextSRTime, vectors); // helper function execution and then storing in variables
             execution += intrpExec;
-            currentTime += updateTime;
+            currentTime = updateTime;
 
-            execution += std::to_string(currentTime) + " ," + std::to_string(ISRActivityTime) + " , Call device driver";
+            execution += std::to_string(currentTime) + ", " + std::to_string(ISRActivityTime) + ", call device driver\n";
             currentTime += ISRActivityTime;
 
-            execution += std::to_string(currentTime) + " , 1" + ", IRET";
+            execution += std::to_string(currentTime) + ", 1, IRET\n";
+            currentTime += 1;
 
         }
         else if (activity == "END_IO") {

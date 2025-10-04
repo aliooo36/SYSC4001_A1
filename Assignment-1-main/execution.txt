@@ -1,46 +1,41 @@
 0, 75, CPU
-75, 1, SYSCALL 5
-76, 84, CPU
-160, 1, switch to kernel mode
-161, 10, context saved
-171, 1, find vector 5 in memory position 0x000A
-172, 1, load address 0X048B into the PC
-173, 211, call device driver
-384, 1, IRET
-385, 22, CPU
-407, 1, SYSCALL 10
-408, 80, CPU
-488, 1, switch to kernel mode
-489, 10, context saved
-499, 1, find vector 10 in memory position 0x0014
-500, 1, load address 0X07B0 into the PC
-501, 564, call device driver
-1065, 1, IRET
-1066, 79, CPU
-1145, 1, SYSCALL 6
-1146, 68, CPU
-1214, 1, switch to kernel mode
-1215, 10, context saved
-1225, 1, find vector 6 in memory position 0x000C
-1226, 1, load address 0X0639 into the PC
-1227, 265, call device driver
-1492, 1, IRET
-1493, 71, CPU
-1564, 1, SYSCALL 4
-1565, 97, CPU
-1662, 1, switch to kernel mode
-1663, 10, context saved
-1673, 1, find vector 4 in memory position 0x0008
-1674, 1, load address 0X0292 into the PC
-1675, 250, call device driver
-1925, 1, IRET
-1926, 84, CPU
-2010, 1, SYSCALL 7
-2011, 38, CPU
-2049, 1, switch to kernel mode
-2050, 10, context saved
-2060, 1, find vector 7 in memory position 0x000E
-2061, 1, load address 0X00BD into the PC
-2062, 152, call device driver
-2214, 1, IRET
-2215, 90, CPU
+75, 1, switch to kernel mode
+76, 10, context saved
+86, 1, find vector 5 in memory position 0x000A
+87, 1, load address 0X048B into the PC
+88, 40, call device driver
+128, 1, IRET
+129, 84, CPU
+213, 22, CPU
+235, 1, switch to kernel mode
+236, 10, context saved
+246, 1, find vector 10 in memory position 0x0014
+247, 1, load address 0X07B0 into the PC
+248, 40, call device driver
+288, 1, IRET
+289, 80, CPU
+369, 79, CPU
+448, 1, switch to kernel mode
+449, 10, context saved
+459, 1, find vector 6 in memory position 0x000C
+460, 1, load address 0X0639 into the PC
+461, 40, call device driver
+501, 1, IRET
+502, 68, CPU
+570, 71, CPU
+641, 1, switch to kernel mode
+642, 10, context saved
+652, 1, find vector 4 in memory position 0x0008
+653, 1, load address 0X0292 into the PC
+654, 40, call device driver
+694, 1, IRET
+695, 97, CPU
+792, 84, CPU
+876, 1, switch to kernel mode
+877, 10, context saved
+887, 1, find vector 7 in memory position 0x000E
+888, 1, load address 0X00BD into the PC
+889, 40, call device driver
+929, 1, IRET
+930, 38, CPU
+968, 90, CPU
