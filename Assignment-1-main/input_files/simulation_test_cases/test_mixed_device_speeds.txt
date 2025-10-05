@@ -1,0 +1,17 @@
+CPU, 150
+SYSCALL, 15  # Fast device (68ms)
+SYSCALL, 9   # Slow device (1000ms)
+SYSCALL, 1   # Medium device (110ms)
+CPU, 100
+END_IO, 15
+END_IO, 9
+END_IO, 1
+CPU, 150
+SYSCALL, 7   # Medium device (152ms)
+SYSCALL, 16  # Slow device (956ms)
+SYSCALL, 4   # Medium device (250ms)
+CPU, 100
+END_IO, 7
+END_IO, 16
+END_IO, 4
+CPU, 150

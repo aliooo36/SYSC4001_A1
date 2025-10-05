@@ -1,0 +1,9 @@
+CPU, 50   # Shorter CPU time for faster CPU
+SYSCALL, 5
+CPU, 50
+END_IO, 5
+CPU, 50
+SYSCALL, 10
+CPU, 50
+END_IO, 10
+CPU, 50

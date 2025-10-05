@@ -1,0 +1,9 @@
+CPU, 200
+SYSCALL, 9   # 1000ms device
+SYSCALL, 16  # 956ms device  
+SYSCALL, 18  # 956ms device
+CPU, 100
+END_IO, 9
+END_IO, 16
+END_IO, 18
+CPU, 200

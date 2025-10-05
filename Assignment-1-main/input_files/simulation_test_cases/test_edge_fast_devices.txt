@@ -1,0 +1,9 @@
+CPU, 200
+SYSCALL, 1   # 110ms device
+SYSCALL, 15  # 68ms device (fastest)
+SYSCALL, 7   # 152ms device
+CPU, 100
+END_IO, 1
+END_IO, 15
+END_IO, 7
+CPU, 200
