@@ -1,7 +1,7 @@
 /**
  *
  * @file interrupts.cpp
- * @author Muhammad Ali & Gregory Horvat
+ * @author Muhammad Ali (101291890) & Gregory Horvat (101303925)
  *
  */
 
