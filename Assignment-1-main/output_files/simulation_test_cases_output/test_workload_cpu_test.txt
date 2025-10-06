@@ -1,0 +1,29 @@
+0, 500, CPU burst
+500, 1, switch to kernel mode
+501, 10, context saved
+511, 1, find vector 1 in memory position 0x0002
+512, 1, load address 0X029C into the PC
+513, 40, call device driver
+553, 1, IRET
+554, 100, CPU burst
+654, 1, switch to kernel mode
+655, 10, context saved
+665, 1, find vector 1 in memory position 0x0002
+666, 1, load address 0X029C into the PC
+667, 100, call device driver
+767, 1, IRET
+768, 400, CPU burst
+1168, 1, switch to kernel mode
+1169, 10, context saved
+1179, 1, find vector 2 in memory position 0x0004
+1180, 1, load address 0X0695 into the PC
+1181, 40, call device driver
+1221, 1, IRET
+1222, 100, CPU burst
+1322, 1, switch to kernel mode
+1323, 10, context saved
+1333, 1, find vector 2 in memory position 0x0004
+1334, 1, load address 0X0695 into the PC
+1335, 150, call device driver
+1485, 1, IRET
+1486, 300, CPU burst

@@ -1,0 +1,15 @@
+0, 200, CPU burst
+200, 1, switch to kernel mode
+201, 10, context saved
+211, 1, find vector 8 in memory position 0x0010
+212, 1, load address 0X06EF into the PC
+213, 40, call device driver
+253, 1, IRET
+254, 100, CPU burst
+354, 1, switch to kernel mode
+355, 10, context saved
+365, 1, find vector 8 in memory position 0x0010
+366, 1, load address 0X06EF into the PC
+367, 1000, call device driver
+1367, 1, IRET
+1368, 200, CPU burst

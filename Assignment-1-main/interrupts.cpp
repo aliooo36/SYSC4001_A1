@@ -33,8 +33,9 @@ int main(int argc, char** argv) {
         /******************ADD YOUR SIMULATION CODE HERE*************************/
 
         if (activity == "CPU") {
-            execution += std::to_string(currentTime) + ", " + std::to_string(duration_intr) + ", CPU burst\n";
-            currentTime += duration_intr;
+            int cpuTime = duration_intr * 100 / CPU_SPEED;
+            execution += std::to_string(currentTime) + ", " + std::to_string(cpuTime) + ", CPU burst\n";
+            currentTime += cpuTime;
         }
 
         else if (activity == "SYSCALL") {

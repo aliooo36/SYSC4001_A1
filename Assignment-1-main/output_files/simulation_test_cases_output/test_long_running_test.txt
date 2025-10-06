@@ -1,0 +1,52 @@
+0, 500, CPU burst
+500, 1, switch to kernel mode
+501, 10, context saved
+511, 1, find vector 5 in memory position 0x000A
+512, 1, load address 0X048B into the PC
+513, 40, call device driver
+553, 1, IRET
+554, 200, CPU burst
+754, 1, switch to kernel mode
+755, 10, context saved
+765, 1, find vector 5 in memory position 0x000A
+766, 1, load address 0X048B into the PC
+767, 211, call device driver
+978, 1, IRET
+979, 300, CPU burst
+1279, 1, switch to kernel mode
+1280, 10, context saved
+1290, 1, find vector 10 in memory position 0x0014
+1291, 1, load address 0X07B0 into the PC
+1292, 40, call device driver
+1332, 1, IRET
+1333, 400, CPU burst
+1733, 1, switch to kernel mode
+1734, 10, context saved
+1744, 1, find vector 10 in memory position 0x0014
+1745, 1, load address 0X07B0 into the PC
+1746, 564, call device driver
+2310, 1, IRET
+2311, 600, CPU burst
+2911, 1, switch to kernel mode
+2912, 10, context saved
+2922, 1, find vector 15 in memory position 0x001E
+2923, 1, load address 0X0584 into the PC
+2924, 40, call device driver
+2964, 1, IRET
+2965, 250, CPU burst
+3215, 1, switch to kernel mode
+3216, 10, context saved
+3226, 1, find vector 15 in memory position 0x001E
+3227, 1, load address 0X0584 into the PC
+3228, 68, call device driver
+3296, 1, IRET
+3297, 350, CPU burst
+3647, 1, switch to kernel mode
+3648, 10, context saved
+3658, 1, find vector 20 in memory position 0x0028
+3659, 1, load address 0X07B7 into the PC
+3660, 40, call device driver
+3700, 1, IRET
+3701, 275, CPU burst
+3976, 1, Error: Invalid device number.
+3977, 425, CPU burst

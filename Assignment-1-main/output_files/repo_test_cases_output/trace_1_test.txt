@@ -1,0 +1,71 @@
+0, 75, CPU burst
+75, 1, switch to kernel mode
+76, 10, context saved
+86, 1, find vector 5 in memory position 0x000A
+87, 1, load address 0X048B into the PC
+88, 40, call device driver
+128, 1, IRET
+129, 84, CPU burst
+213, 1, switch to kernel mode
+214, 10, context saved
+224, 1, find vector 5 in memory position 0x000A
+225, 1, load address 0X048B into the PC
+226, 211, call device driver
+437, 1, IRET
+438, 22, CPU burst
+460, 1, switch to kernel mode
+461, 10, context saved
+471, 1, find vector 10 in memory position 0x0014
+472, 1, load address 0X07B0 into the PC
+473, 40, call device driver
+513, 1, IRET
+514, 80, CPU burst
+594, 1, switch to kernel mode
+595, 10, context saved
+605, 1, find vector 10 in memory position 0x0014
+606, 1, load address 0X07B0 into the PC
+607, 564, call device driver
+1171, 1, IRET
+1172, 79, CPU burst
+1251, 1, switch to kernel mode
+1252, 10, context saved
+1262, 1, find vector 6 in memory position 0x000C
+1263, 1, load address 0X0639 into the PC
+1264, 40, call device driver
+1304, 1, IRET
+1305, 68, CPU burst
+1373, 1, switch to kernel mode
+1374, 10, context saved
+1384, 1, find vector 6 in memory position 0x000C
+1385, 1, load address 0X0639 into the PC
+1386, 265, call device driver
+1651, 1, IRET
+1652, 71, CPU burst
+1723, 1, switch to kernel mode
+1724, 10, context saved
+1734, 1, find vector 4 in memory position 0x0008
+1735, 1, load address 0X0292 into the PC
+1736, 40, call device driver
+1776, 1, IRET
+1777, 97, CPU burst
+1874, 1, switch to kernel mode
+1875, 10, context saved
+1885, 1, find vector 4 in memory position 0x0008
+1886, 1, load address 0X0292 into the PC
+1887, 250, call device driver
+2137, 1, IRET
+2138, 84, CPU burst
+2222, 1, switch to kernel mode
+2223, 10, context saved
+2233, 1, find vector 7 in memory position 0x000E
+2234, 1, load address 0X00BD into the PC
+2235, 40, call device driver
+2275, 1, IRET
+2276, 38, CPU burst
+2314, 1, switch to kernel mode
+2315, 10, context saved
+2325, 1, find vector 7 in memory position 0x000E
+2326, 1, load address 0X00BD into the PC
+2327, 152, call device driver
+2479, 1, IRET
+2480, 90, CPU burst

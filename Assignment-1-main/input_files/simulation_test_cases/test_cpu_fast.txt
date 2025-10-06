@@ -1,4 +1,4 @@
-CPU, 50   # Shorter CPU time for faster CPU
+CPU, 50   # Shorter CPU time for faster CPU + changed cpu speed in .hpp file
 SYSCALL, 5
 CPU, 50
 END_IO, 5
